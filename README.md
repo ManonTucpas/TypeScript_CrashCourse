@@ -7,6 +7,7 @@ reprendre a: 1:36:47
 
 sudo npm install -g typescript
 sudo apt install nodejs (come with the npm tools)
+sudo npm install node-modules (to reinstall node_modules)
 
 # Compile TypeScript file to JavaScript file #
 
