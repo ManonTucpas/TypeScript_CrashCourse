@@ -11,7 +11,7 @@
 //     name: 'Manon',
 //     age: 30,
 //     hobbies: ['Sport', 'Meditation'],
-//     role: [2, 'author'] // this is a tuple size of 2 et any[]
+//     role: [2, 'author'] // this is a tuple size of 2 [number, string]
 // };
 
 

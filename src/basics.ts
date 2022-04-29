@@ -1,6 +1,6 @@
 console.log('Testing....');
 
-function add(n1: number, n2: number, showResult: boolean, phrase: string)
+function addBasics(n1: number, n2: number, showResult: boolean, phrase: string)
 {
 	// if(typeof n1 !== 'number' || typeof n2 !== 'number')
 	// 	throw Error("Wrong input!");   
@@ -8,7 +8,7 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string)
 	if (showResult)
 		console.log(phrase + res);
 	else
-		return n1 + n2;
+		return res;
 }
 
 let number1: number;
@@ -17,4 +17,4 @@ const number2 = 434;
 const printResult = true;
 const resultIs = "Result is: ";
 
-add(number1, number2, printResult, resultIs);
+addBasics(number1, number2, printResult, resultIs);

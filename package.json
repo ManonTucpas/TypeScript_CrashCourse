@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "node-modules": "^1.0.1"
   }
 }

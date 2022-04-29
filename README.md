@@ -60,27 +60,21 @@ enum Role { ADMIN = 1, READ_ONLY, AUTHOR}; -> READ_ONLY will be 2 AUTHOR 3 etc..
 we can do whatever we want:
 enum Role { ADMIN = 'ADMIN', READ_ONLY = 100 , AUTHOR = 'AUTHOR'};
 7. any: can store any kind of value but it's dangerous
-
+8. unknown type: can store any values in there without gettibg errors, it's more restrictive than any
+9. never : return nothing?
 
 
 # Compiler && config deep dive
 
-# Working with Next-gen Js Code
+1. to avoid to re-compile each time we change a file :
+-> npm start : automatically reload the page when compilation occurs
+2. tsc app.ts --watch <==> tsc app.ts -w 
+then no need to recompile eacch time but it works with only app.ts
+3. to copmile all files : 
+        -> tsc --init   //it will create a tsconfig.json it tells typeScript how it should compile
+        -> tsc OR tsc -w        // will create .js files for all files .ts in the project
 
-# Classes && Interfaces
+4. In the tsconfig.js 
+    you can include or exclude files from the compilation
+    "souceMap": true allows you to debug easily in the console
 
-# Advanced types && TypeScript features
-
-# Generics
-
-# Decorators
-
-# Practice
-
-# Working with Namespace && Modules
-
-# Webpack && TypeScript
-
-# Third-Party Librairies && TypeScript
-
-# React + TypeScript && NodeJS + TypeScript

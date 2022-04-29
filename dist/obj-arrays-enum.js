@@ -1,3 +1,4 @@
+"use strict";
 //Example w implemantation of tuple
 // const person: 
 // {
@@ -9,7 +10,7 @@
 //     name: 'Manon',
 //     age: 30,
 //     hobbies: ['Sport', 'Meditation'],
-//     role: [2, 'author'] // this is a tuple size of 2 et any[]
+//     role: [2, 'author'] // this is a tuple size of 2 [number, string]
 // };
 //Example w implemantation of enum
 // const ADMIN = 0;
@@ -23,19 +24,17 @@ var Role;
     Role[Role["AUTHOR"] = 2] = "AUTHOR";
 })(Role || (Role = {}));
 ;
-var person = {
+const person = {
     name: 'Manon',
     age: 30,
     hobbies: ['Sport', 'Meditation'],
     role: Role.ADMIN
 };
-var favoriteActivities;
+let favoriteActivities;
 console.log(person.name);
 console.log(person.age);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
+for (const hobby of person.hobbies) // to print an array
     console.log(hobby.toUpperCase());
-}
 if (person.role === Role.AUTHOR) {
     console.log('is author');
 }
